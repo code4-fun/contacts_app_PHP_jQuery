@@ -1,0 +1,181 @@
+/*----------------------NORMALIZING------------------------------*/
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  background: #eceff4;
+  font-family: Open Sans, sans-serif;
+}
+/*----------------------MAJOR------------------------------*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.page {
+  flex: auto;
+  padding-top: 70px;
+}
+.container {
+  max-width: 800px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+.main_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+/*----------------------NOTES LIST------------------------------*/
+.contact_body {
+  display: flex;
+}
+.contact_body > *:not(:last-child) {
+  padding-right: 5px;
+}
+.contact_item {
+  border-bottom: 1px solid #eeeeee;
+}
+.contact_phone {
+  color: #686767;
+}
+/*----------------------FORM--------------------------*/
+.form_frame,
+.contact_list {
+  width: fit-content;
+  margin: 0 auto;
+}
+.form_container,
+.contact_container {
+  margin: 0 auto 20px;
+  background: white;
+  border-radius: 4px;
+  min-height: 50px;
+  width: 320px;
+  box-shadow: 0 3px 7px 0 rgba(0,0,0,0.05);
+}
+.form_header,
+.contact_header {
+  padding: 20px 0 17px 25px;
+  border-bottom: 1px solid #eeeeee;
+}
+.form_body,
+.contact_item {
+  padding: 21px 25px 25px 25px;
+}
+input[name='name'] {
+  margin-bottom: 10px;
+}
+input[name='phone'] {
+  margin-bottom: 15px;
+}
+.contact-input {
+  padding: 11px 0 11px 16px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  font-family: inherit;
+}
+.contact-input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.contact-button {
+  height: 43px;
+  min-width: 70px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  background: #4d59a1;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  font-family: 'Raleway', sans-serif;
+}
+.contact-button:hover {
+  background: #8187c4;
+  cursor: pointer;
+}
+.contact-button:active {
+  border-color: #9198c1;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(208, 208, 208);
+}
+.contact-button {
+  align-self: flex-end;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-errors {
+  color: #ef0a0a;
+  margin: 0 0 5px 0;
+}
+/*----------------------DELETE BUTTON--------------------------*/
+.delete-button-block {
+  display: flex;
+  justify-content: right;
+}
+.delete-button-block:hover {
+  cursor: pointer;
+}
+.delete-button {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 20px;
+}
+.delete-button:before,
+.delete-button:after {
+  position: absolute;
+  content: '';
+  background-color: #000000;
+  width: 50%;
+  height: 1px;
+  left: 0;
+}
+.delete-button:before {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.delete-button:after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
