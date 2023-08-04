@@ -1,7 +1,5 @@
-$(document).ready(function(){
-  $(document).on('click', '.delete-button-block', function(e){
-    deleteContact(e.currentTarget.dataset.id)
-  })
+$(document).on('click', '.delete-button-block', function(e){
+  deleteContact(e.currentTarget.dataset.id)
 })
 
 // Create contact
